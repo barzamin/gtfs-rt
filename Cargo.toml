@@ -1,0 +1,13 @@
+[package]
+name = "gtfs-rt"
+version = "0.1.0"
+authors = ["Erin Moon <erin@hashbang.sh>"]
+edition = "2018"
+
+[dependencies]
+bytes = "0.4"
+prost = "0.4"
+prost-derive = "0.4"
+
+[build-dependencies]
+prost-build = "0.4"

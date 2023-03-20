@@ -12,9 +12,9 @@ edition = "2018"
 maintenance = { status = "experimental" }
 
 [dependencies]
-prost = "0.8"
-prost-derive = "0.8"
+prost = "0.11"
+prost-derive = "0.11"
 serde = { version = "1.0", features = ["derive"] }
 
 [build-dependencies]
-prost-build = "0.8"
+prost-build = "0.11"

@@ -1,0 +1,2 @@
+# `gtfs-rt`
+is a small (trivial, really!) crate for reading protobuf-encoded [gtfs-rt](https://developers.google.com/transit/gtfs-realtime) data. this crate will get you a nice, nested-struct, Serde-serializable form of any protobuf blob a transit authority might provide, but that's pretty much it: it doesn't help you make sense of this. also, if you're a transit provider, it doesn't have functionality to help you _make_ gtfs-rt protobuf blobs. if you're doing that, 1. omg let me know because that's really cool, and 2. i'm extremely happy to merge in your changes.

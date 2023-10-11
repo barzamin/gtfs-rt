@@ -354,7 +354,7 @@ message TripUpdate {
     // schedule_relationship=DUPLICATED, otherwise this field must not be populated and will be ignored by consumers.
     // NOTE: This field is still experimental, and subject to change. It may be formally adopted in the future.
     optional string start_date = 2;
-    // Defines the departure start time of the trip when itâ€™s duplicated. See definition of stop_times.departure_time
+    // Defines the departure start time of the trip when it’s duplicated. See definition of stop_times.departure_time
     // in (CSV) GTFS. Scheduled arrival and departure times for the duplicated trip are calculated based on the offset
     // between the original trip departure_time and this field. For example, if a GTFS trip has stop A with a
     // departure_time of 10:00:00 and stop B with departure_time of 10:01:00, and this field is populated with the value
@@ -490,7 +490,7 @@ message VehiclePosition {
     NO_DATA_AVAILABLE = 7;
 
     // The vehicle or carriage is not boardable and never accepts passengers.
-    // Useful for special vehicles or carriages (engine, maintenance carriage, etcâ€¦).
+    // Useful for special vehicles or carriages (engine, maintenance carriage, etc…).
     NOT_BOARDABLE = 8;
 
   }
@@ -559,7 +559,7 @@ message VehiclePosition {
   // The number of occurrences of the multi_carriage_details 
   // field represents the number of carriages of the vehicle.
   // It also includes non boardable carriages, 
-  // like engines, maintenance carriages, etcâ€¦ as they provide valuable 
+  // like engines, maintenance carriages, etc… as they provide valuable 
   // information to passengers about where to stand on a platform.
   // This message/field is still experimental, and subject to change. It may be formally adopted in the future.
   repeated CarriageDetails multi_carriage_details = 11;
@@ -639,10 +639,10 @@ message Alert {
 
   // Severity of this alert.
   enum SeverityLevel {
-	UNKNOWN_SEVERITY = 1;
-	INFO = 2;
-	WARNING = 3;
-	SEVERE = 4;
+  UNKNOWN_SEVERITY = 1;
+  INFO = 2;
+  WARNING = 3;
+  SEVERE = 4;
   }
 
   optional SeverityLevel severity_level = 14 [default = UNKNOWN_SEVERITY];
@@ -972,7 +972,7 @@ message TranslatedImage {
     // String containing an URL linking to an image
     // The image linked must be less than 2MB. 
     // If an image changes in a significant enough way that an update is required on the consumer side, the producer must update the URL to a new one.
-    // The URL should be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. See the followingÂ http://www.w3.org/Addressing/URL/4_URI_Recommentations.htmlÂ for a description of how to create fully qualified URL values.
+    // The URL should be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. See the following http://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description of how to create fully qualified URL values.
     required string url = 1;
 
     // IANA media type as to specify the type of image to be displayed. 

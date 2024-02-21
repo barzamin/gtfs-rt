@@ -1,7 +1,7 @@
 [package]
 name = "gtfs-rt"
 description = "Read, write, and manipulate GTFS-Realtime data"
-version = "0.4.0"
+version = "0.4.1"
 authors = ["Erin Moon <erin@hecke.rs>"]
 license = "MIT AND Apache-2.0"
 repository = "https://github.com/barzamin/gtfs-rt"
@@ -12,9 +12,9 @@ edition = "2018"
 maintenance = { status = "passively-maintained" }
 
 [dependencies]
-prost = "0.11"
-prost-derive = "0.11"
+prost = "0.12"
+prost-derive = "0.12"
 serde = { version = "1.0", features = ["derive"] }
 
 [build-dependencies]
-prost-build = "0.11"
+prost-build = "0.12"

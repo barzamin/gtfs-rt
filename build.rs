@@ -4,7 +4,7 @@ fn main() {
     Config::new()
         .type_attribute(
             ".",
-            "#[derive(Serialize)] #[serde(rename_all = \"snake_case\")]",
+            "#[derive(Deserialize, Serialize)] #[serde(rename_all = \"snake_case\")]",
         )
         .compile_protos(&["src/gtfs-realtime.proto"], &["src/"])
         .unwrap();
